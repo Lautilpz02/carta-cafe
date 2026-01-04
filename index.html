@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafeteria Oshivia| Carta</title>
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --marron: #6f4e37;
+      --crema: #f6efe9;
+      --oscuro: #2b1d14;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--crema);
+      color: var(--oscuro);
+    }
+
+    /* HERO / BANNER */
+    .hero {
+      height: 50vh;
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('banner.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+
+    /* SECCIONES */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      color: var(--marron);
+    }
+
+    /* MENÚ */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,.15);
+      transition: transform .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: var(--marron);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--oscuro);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    footer p {
+      opacity: .85;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <h1>Caféteria oshovia</h1>
+      <p>Momentos que saben mejor ☕</p>
+    </div>
+  </header>
+
+  <!-- CAFÉS -->
+  <section>
+    <h2>☕ Cafés</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="cafe1.jpg" alt="Espresso">
+        <div class="card-content">
+          <h3>Espresso</h3>
+          <p class="price">$1200</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="cafe2.jpg" alt="Capuccino">
+        <div class="card-content">
+          <h3>Capuccino</h3>
+          <p class="price">$1700</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DULCE -->
+  <section>
+    <h2>🍰 Dulce</h2>
+    <div class="menu-grid">
+      <div class="card">
+        <img src="dulce1.jpg" alt="Cheesecake">
+        <div class="card-content">
+          <h3>Cheesecake</h3>
+          <p class="price">$3000</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="dulce2.jpg" alt="Brownie">
+        <div class="card-content">
+          <h3>Brownie</h3>
+          <p class="price">$2200</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📍 Tu ciudad · 📞 388-000000 · Instagram: @cafearoma</p>
+  </footer>
+
+</body>
+</html>
